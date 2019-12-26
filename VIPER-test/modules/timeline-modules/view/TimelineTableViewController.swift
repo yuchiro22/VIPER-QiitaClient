@@ -48,16 +48,10 @@ extension TimelineTableViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let timelineEntity = timelineEntities[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "timelineCell", for: indexPath) as? TimelineCell {
-            cell.titleLabel.text = timelineEntity.title
-            
+            cell.drawCell(entity: timelineEntities[indexPath.row])
             return cell
         }
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "timelineCell", for: indexPath) as! TimelineCell
-
-//        cell.drawCell(entity: timelineEntity)
-        
         
         return UITableViewCell()
     }

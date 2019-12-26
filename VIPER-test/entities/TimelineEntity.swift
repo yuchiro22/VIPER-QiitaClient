@@ -14,9 +14,6 @@ struct TimelineEntity: Codable {
     
     struct User: Codable {
         var name: String
+        var profile_image_url: String
     }
-}
-
-struct TimelineEntityMock: Codable {
-    var title: String
 }
