@@ -15,6 +15,6 @@ class TimelineCell: UITableViewCell {
     
     func drawCell(entity: TimelineEntity) {
         titleLabel.text = entity.title
-        //userNameLabel.text = entity.user.name
+        userNameLabel.text = entity.user.name
     }
 }

@@ -15,23 +15,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="431" height="136"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHZ-VT-Fc7">
-                        <rect key="frame" x="0.0" y="0.0" width="431" height="136"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHZ-VT-Fc7">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="115.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="user name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEO-Dj-FPO">
+                        <rect key="frame" x="0.0" y="115.5" width="431" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hEO-Dj-FPO" secondAttribute="bottom" id="26M-K0-EIg"/>
+                    <constraint firstAttribute="trailing" secondItem="hEO-Dj-FPO" secondAttribute="trailing" id="FlX-lI-gtW"/>
+                    <constraint firstItem="hEO-Dj-FPO" firstAttribute="leading" secondItem="7W4-Yt-FpF" secondAttribute="leading" id="g99-rH-qAy"/>
                     <constraint firstAttribute="trailing" secondItem="rHZ-VT-Fc7" secondAttribute="trailing" id="i72-0K-9OC"/>
                     <constraint firstItem="rHZ-VT-Fc7" firstAttribute="top" secondItem="7W4-Yt-FpF" secondAttribute="top" id="ilj-ax-M1i"/>
                     <constraint firstItem="rHZ-VT-Fc7" firstAttribute="leading" secondItem="7W4-Yt-FpF" secondAttribute="leading" id="lBQ-vl-uOd"/>
                     <constraint firstItem="rHZ-VT-Fc7" firstAttribute="top" secondItem="7W4-Yt-FpF" secondAttribute="top" id="q81-Rc-Bkp"/>
-                    <constraint firstAttribute="bottom" secondItem="rHZ-VT-Fc7" secondAttribute="bottom" id="uTo-eT-wMm"/>
+                    <constraint firstItem="hEO-Dj-FPO" firstAttribute="top" secondItem="rHZ-VT-Fc7" secondAttribute="bottom" id="yYL-sC-Ihy"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="titleLabel" destination="rHZ-VT-Fc7" id="GPy-dD-Rbi"/>
+                <outlet property="userNameLabel" destination="hEO-Dj-FPO" id="u76-Op-aOs"/>
             </connections>
             <point key="canvasLocation" x="19.565217391304348" y="-68.303571428571431"/>
         </tableViewCell>
