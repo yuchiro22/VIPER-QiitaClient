@@ -25,6 +25,7 @@
 		50F7B40E23B3301A00487140 /* tableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B40D23B3301A00487140 /* tableView.xib */; };
 		50F7B41023B331E400487140 /* timelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B40F23B331E400487140 /* timelineCell.xib */; };
 		50F7B41223B3343E00487140 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B41123B3343E00487140 /* TimelineCell.swift */; };
+		50F7B45723B4B7D600487140 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B45623B4B7D600487140 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		50F7B40D23B3301A00487140 /* tableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableView.xib; sourceTree = "<group>"; };
 		50F7B40F23B331E400487140 /* timelineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timelineCell.xib; sourceTree = "<group>"; };
 		50F7B41123B3343E00487140 /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		50F7B45623B4B7D600487140 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				50F7B3BF23ACC05B00487140 /* VIPER-test */,
+				50F7B45523B4B7B900487140 /* extension */,
 				50F7B3D623ACC05E00487140 /* VIPER-testTests */,
 				50F7B3E123ACC05E00487140 /* VIPER-testUITests */,
 				50F7B3BE23ACC05B00487140 /* Products */,
@@ -240,6 +243,14 @@
 				50F7B40923ACD1BB00487140 /* QiitaAPIClient.swift */,
 			);
 			path = api;
+			sourceTree = "<group>";
+		};
+		50F7B45523B4B7B900487140 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B45623B4B7D600487140 /* UIImage+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		D1FCD3FAE9DA6F7B7153A2AA /* Frameworks */ = {
@@ -445,6 +456,7 @@
 				50F7B40C23B31BA600487140 /* RootRouter.swift in Sources */,
 				50F7B3FB23ACC38C00487140 /* TimelineTableViewController.swift in Sources */,
 				50F7B40423ACC6AA00487140 /* TimelineInteractor.swift in Sources */,
+				50F7B45723B4B7D600487140 /* UIImage+Extension.swift in Sources */,
 				50F7B3C323ACC05B00487140 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

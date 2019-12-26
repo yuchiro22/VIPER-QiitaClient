@@ -12,8 +12,10 @@ class TimelineCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
     
     func drawCell(entity: TimelineEntity) {
+        userImage.image = UIImage(url: entity.user.profile_image_url)
         titleLabel.text = entity.title
         userNameLabel.text = entity.user.name
     }
