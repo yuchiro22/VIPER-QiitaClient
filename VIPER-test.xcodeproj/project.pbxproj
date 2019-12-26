@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197B11985C73DB6340F228CF /* Pods_VIPER_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7E2FC815548B557F77097B /* Pods_VIPER_test.framework */; };
 		50F7B3C123ACC05B00487140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3C023ACC05B00487140 /* AppDelegate.swift */; };
 		50F7B3C323ACC05B00487140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3C223ACC05B00487140 /* SceneDelegate.swift */; };
-		50F7B3C523ACC05B00487140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3C423ACC05B00487140 /* ViewController.swift */; };
-		50F7B3C823ACC05B00487140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B3C623ACC05B00487140 /* Main.storyboard */; };
 		50F7B3CA23ACC05D00487140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B3C923ACC05D00487140 /* Assets.xcassets */; };
 		50F7B3CD23ACC05D00487140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B3CB23ACC05D00487140 /* LaunchScreen.storyboard */; };
 		50F7B3D823ACC05E00487140 /* VIPER_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3D723ACC05E00487140 /* VIPER_testTests.swift */; };
 		50F7B3E323ACC05E00487140 /* VIPER_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3E223ACC05E00487140 /* VIPER_testUITests.swift */; };
+		50F7B3F723ACC18F00487140 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B3F623ACC18F00487140 /* Timeline.storyboard */; };
+		50F7B3FB23ACC38C00487140 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3FA23ACC38C00487140 /* TimelineTableViewController.swift */; };
+		50F7B3FE23ACC41A00487140 /* TimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B3FD23ACC41A00487140 /* TimelineRouter.swift */; };
+		50F7B40123ACC5AD00487140 /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B40023ACC5AD00487140 /* TimelinePresenter.swift */; };
+		50F7B40423ACC6AA00487140 /* TimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B40323ACC6AA00487140 /* TimelineInteractor.swift */; };
+		50F7B40723ACCD3B00487140 /* TimelineEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B40623ACCD3B00487140 /* TimelineEntity.swift */; };
+		50F7B40A23ACD1BB00487140 /* QiitaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B40923ACD1BB00487140 /* QiitaAPIClient.swift */; };
+		50F7B40C23B31BA600487140 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B40B23B31BA600487140 /* RootRouter.swift */; };
+		50F7B40E23B3301A00487140 /* tableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B40D23B3301A00487140 /* tableView.xib */; };
+		50F7B41023B331E400487140 /* timelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7B40F23B331E400487140 /* timelineCell.xib */; };
+		50F7B41223B3343E00487140 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B41123B3343E00487140 /* TimelineCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01989884673C3E4F5EC3E10A /* Pods-VIPER-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-test.release.xcconfig"; path = "Target Support Files/Pods-VIPER-test/Pods-VIPER-test.release.xcconfig"; sourceTree = "<group>"; };
+		1B7E2FC815548B557F77097B /* Pods_VIPER_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3FEC7F3B87BD7A3DB7A226 /* Pods-VIPER-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-test.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-test/Pods-VIPER-test.debug.xcconfig"; sourceTree = "<group>"; };
 		50F7B3BD23ACC05B00487140 /* VIPER-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F7B3C023ACC05B00487140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F7B3C223ACC05B00487140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50F7B3C423ACC05B00487140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50F7B3C723ACC05B00487140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50F7B3C923ACC05D00487140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F7B3CC23ACC05D00487140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50F7B3CE23ACC05D00487140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		50F7B3DE23ACC05E00487140 /* VIPER-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F7B3E223ACC05E00487140 /* VIPER_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_testUITests.swift; sourceTree = "<group>"; };
 		50F7B3E423ACC05E00487140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F7B3F623ACC18F00487140 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		50F7B3FA23ACC38C00487140 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		50F7B3FD23ACC41A00487140 /* TimelineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRouter.swift; sourceTree = "<group>"; };
+		50F7B40023ACC5AD00487140 /* TimelinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
+		50F7B40323ACC6AA00487140 /* TimelineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineInteractor.swift; sourceTree = "<group>"; };
+		50F7B40623ACCD3B00487140 /* TimelineEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntity.swift; sourceTree = "<group>"; };
+		50F7B40923ACD1BB00487140 /* QiitaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIClient.swift; sourceTree = "<group>"; };
+		50F7B40B23B31BA600487140 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		50F7B40D23B3301A00487140 /* tableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableView.xib; sourceTree = "<group>"; };
+		50F7B40F23B331E400487140 /* timelineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timelineCell.xib; sourceTree = "<group>"; };
+		50F7B41123B3343E00487140 /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197B11985C73DB6340F228CF /* Pods_VIPER_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				50F7B3D623ACC05E00487140 /* VIPER-testTests */,
 				50F7B3E123ACC05E00487140 /* VIPER-testUITests */,
 				50F7B3BE23ACC05B00487140 /* Products */,
+				EE6D0EC3CE7DCFF4A3F17884 /* Pods */,
+				D1FCD3FAE9DA6F7B7153A2AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +124,11 @@
 		50F7B3BF23ACC05B00487140 /* VIPER-test */ = {
 			isa = PBXGroup;
 			children = (
-				50F7B3C023ACC05B00487140 /* AppDelegate.swift */,
-				50F7B3C223ACC05B00487140 /* SceneDelegate.swift */,
-				50F7B3C423ACC05B00487140 /* ViewController.swift */,
-				50F7B3C623ACC05B00487140 /* Main.storyboard */,
-				50F7B3C923ACC05D00487140 /* Assets.xcassets */,
-				50F7B3CB23ACC05D00487140 /* LaunchScreen.storyboard */,
 				50F7B3CE23ACC05D00487140 /* Info.plist */,
+				50F7B3F023ACC0A700487140 /* application */,
+				50F7B3F123ACC0FE00487140 /* modules */,
+				50F7B3F223ACC10B00487140 /* data */,
+				50F7B3F323ACC13000487140 /* entities */,
 			);
 			path = "VIPER-test";
 			sourceTree = "<group>";
@@ -128,6 +151,114 @@
 			path = "VIPER-testUITests";
 			sourceTree = "<group>";
 		};
+		50F7B3F023ACC0A700487140 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B3C223ACC05B00487140 /* SceneDelegate.swift */,
+				50F7B3C023ACC05B00487140 /* AppDelegate.swift */,
+				50F7B3CB23ACC05D00487140 /* LaunchScreen.storyboard */,
+				50F7B3C923ACC05D00487140 /* Assets.xcassets */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		50F7B3F123ACC0FE00487140 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B40B23B31BA600487140 /* RootRouter.swift */,
+				50F7B3F423ACC16000487140 /* timeline-modules */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		50F7B3F223ACC10B00487140 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B40223ACC69A00487140 /* interactor */,
+				50F7B40823ACD1A100487140 /* api */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		50F7B3F323ACC13000487140 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B40623ACCD3B00487140 /* TimelineEntity.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		50F7B3F423ACC16000487140 /* timeline-modules */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B3FF23ACC59300487140 /* presenter */,
+				50F7B3FC23ACC40000487140 /* router */,
+				50F7B3F523ACC17200487140 /* view */,
+			);
+			path = "timeline-modules";
+			sourceTree = "<group>";
+		};
+		50F7B3F523ACC17200487140 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B3F623ACC18F00487140 /* Timeline.storyboard */,
+				50F7B3FA23ACC38C00487140 /* TimelineTableViewController.swift */,
+				50F7B40D23B3301A00487140 /* tableView.xib */,
+				50F7B40F23B331E400487140 /* timelineCell.xib */,
+				50F7B41123B3343E00487140 /* TimelineCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		50F7B3FC23ACC40000487140 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B3FD23ACC41A00487140 /* TimelineRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		50F7B3FF23ACC59300487140 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B40023ACC5AD00487140 /* TimelinePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		50F7B40223ACC69A00487140 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B40323ACC6AA00487140 /* TimelineInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		50F7B40823ACD1A100487140 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				50F7B40923ACD1BB00487140 /* QiitaAPIClient.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		D1FCD3FAE9DA6F7B7153A2AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B7E2FC815548B557F77097B /* Pods_VIPER_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE6D0EC3CE7DCFF4A3F17884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FEC7F3B87BD7A3DB7A226 /* Pods-VIPER-test.debug.xcconfig */,
+				01989884673C3E4F5EC3E10A /* Pods-VIPER-test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F7B3E723ACC05E00487140 /* Build configuration list for PBXNativeTarget "VIPER-test" */;
 			buildPhases = (
+				0E7E703EA15E19B47875919C /* [CP] Check Pods Manifest.lock */,
 				50F7B3B923ACC05B00487140 /* Sources */,
 				50F7B3BA23ACC05B00487140 /* Frameworks */,
 				50F7B3BB23ACC05B00487140 /* Resources */,
+				CEAD670D08A0EBE3C9E167CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F7B3CD23ACC05D00487140 /* LaunchScreen.storyboard in Resources */,
+				50F7B40E23B3301A00487140 /* tableView.xib in Resources */,
+				50F7B3F723ACC18F00487140 /* Timeline.storyboard in Resources */,
+				50F7B41023B331E400487140 /* timelineCell.xib in Resources */,
 				50F7B3CA23ACC05D00487140 /* Assets.xcassets in Resources */,
-				50F7B3C823ACC05B00487140 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +389,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E7E703EA15E19B47875919C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEAD670D08A0EBE3C9E167CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER-test/Pods-VIPER-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER-test/Pods-VIPER-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER-test/Pods-VIPER-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50F7B3B923ACC05B00487140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F7B3C523ACC05B00487140 /* ViewController.swift in Sources */,
+				50F7B3FE23ACC41A00487140 /* TimelineRouter.swift in Sources */,
 				50F7B3C123ACC05B00487140 /* AppDelegate.swift in Sources */,
+				50F7B41223B3343E00487140 /* TimelineCell.swift in Sources */,
+				50F7B40A23ACD1BB00487140 /* QiitaAPIClient.swift in Sources */,
+				50F7B40723ACCD3B00487140 /* TimelineEntity.swift in Sources */,
+				50F7B40123ACC5AD00487140 /* TimelinePresenter.swift in Sources */,
+				50F7B40C23B31BA600487140 /* RootRouter.swift in Sources */,
+				50F7B3FB23ACC38C00487140 /* TimelineTableViewController.swift in Sources */,
+				50F7B40423ACC6AA00487140 /* TimelineInteractor.swift in Sources */,
 				50F7B3C323ACC05B00487140 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +481,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		50F7B3C623ACC05B00487140 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50F7B3C723ACC05B00487140 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50F7B3CB23ACC05D00487140 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +608,7 @@
 		};
 		50F7B3E823ACC05E00487140 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3FEC7F3B87BD7A3DB7A226 /* Pods-VIPER-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +626,7 @@
 		};
 		50F7B3E923ACC05E00487140 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01989884673C3E4F5EC3E10A /* Pods-VIPER-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
